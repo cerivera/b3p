@@ -1,0 +1,33 @@
+<div class="page-header">
+    <div class="actions-button pull-right">
+        <div class="btn-group">
+            <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+                Action
+                <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="javascript: void(0);" id="start-email-action">Email</a></li>
+            </ul>
+        </div>
+</div>
+    <h1><%= report_title %></h1>
+</div>
+
+<div class="row">
+    <div class="span12">
+        <form>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th><input type="checkbox" id="table-select-all" /></th>
+                        <% _(headers).each(function(header) { %>
+                            <th><%= header %></th>
+                        <% }); %>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</div>

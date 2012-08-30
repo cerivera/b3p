@@ -6,7 +6,7 @@ define([
 
     var CollectionView = BaseView.extend({
         initialize : function(collection, options) {
-            wrap.CollectionView.__super__.initialize.call(this);
+            CollectionView.__super__.initialize.call(this);
             _.bindAll(this, 'render', 'fetchAndRender');
             this.collection = collection;
 

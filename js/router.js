@@ -18,7 +18,7 @@ define([
             require(['views/reports/accounts', 'collections/table_row'],
                 function(TableView, TableRowCollection){
                     self.updateContent(new TableView(new TableRowCollection(), {
-                        url : O.OneIdUtil.adminApiUrl('get_outstanding_accounts_report')
+                        url : 'get_accounts_report'
                     }));
                 }
             );
@@ -29,7 +29,7 @@ define([
             require(['views/reports/transactions', 'collections/table_row'],
                 function(TableView, TableRowCollection){
                     self.updateContent(new TableView(new TableRowCollection(), {
-                        url : O.OneIdUtil.adminApiUrl('get_transaction_counts_report')
+                        url : 'get_transactions_report'
                     }));
                 }
             );

@@ -1,11 +1,11 @@
 define([
     'collections/abstract',
-    'models/abstract',
+    'models/table_row',
     'models/sync'
-], function(AbstractCollections, AbstractModels, LocalSync){
-    var TableRowCollection = AbstractCollections.Collection.extend({
-        model: AbstractModels.TableRow,
-        sync: LocalSync.sync
+], function(AbstractCollection, TableRowModel, LocalSync){
+    var TableRowCollection = AbstractCollection.extend({
+        model: TableRowModel,
+        sync: LocalSync
     });
 
     return TableRowCollection;

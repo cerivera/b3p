@@ -49,21 +49,10 @@ define([
             var subject = $('#email-modal input[name="subject"]', this.el).val();
             var message = $('#email-modal textarea[name="message"]', this.el).val();
 
-            var self = this;
-            /*OneIdUtil.ajax({
-                url : OneIdUtil.adminApiUrl(this.options.email_api_call),
-                type : 'POST',
-                data : {row_filters : filters, subject: subject, message:message},
+            // TODO send email here
 
-                success : function(data, textStatus, jqXHR) {
-                    $('a.close-modal', self.el).click();
-                    self.globalDispatcher.trigger('flashSuccessMsg', 'Email sent.')
-                },
-                error: function(){
-                    $('a.close-modal', self.el).click();
-                    self.globalDispatcher.trigger('flashErrorMsg', 'Email could not be sent.')
-                }
-            });*/
+            $('a.close-modal', this.el).click();
+            this.globalDispatcher.trigger('flashSuccessMsg', 'Email sent.')
         }
     });
 

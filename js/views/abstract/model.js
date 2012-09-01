@@ -6,7 +6,7 @@ define([
 
     var ModelView = BaseView.extend({
         initialize : function() {
-            wrap.ModelView.__super__.initialize.call(this);
+            ModelView.__super__.initialize.call(this);
             _.bindAll(this, 'saveBackup', 'rollBack', 'remove');
         },
         saveBackup: function(){

@@ -45,7 +45,8 @@ define([
             this.options.headers = ['Email', 'Add Device', 'Change PW', 'Change PIN', 'Share Attrs', 'Login'];
             this.options.report_title = 'Transactions Report';
             this.options.email_api_call = 'do_transactions_report_email';
-            this.fetchAndRender();
+//            this.fetchAndRender();
+            this.render();
         }
     });
 

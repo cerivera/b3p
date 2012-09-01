@@ -43,7 +43,8 @@ define([
             this.options.headers = ['Account Status', 'Count'];
             this.options.report_title = ['Outstanding Accounts'];
             this.options.email_api_call = 'do_outstanding_accounts_report_email';
-            this.fetchAndRender();
+//            this.fetchAndRender();
+            this.render();
         }
 
     });

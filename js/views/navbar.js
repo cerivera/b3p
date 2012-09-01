@@ -20,7 +20,6 @@ define([
 
         render : function(){
             $(this.el).prepend(this.template());
-            $('.dropdown-toggle').dropdown();
             return this;
         }
     });

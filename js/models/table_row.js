@@ -5,7 +5,7 @@ define([
 ], function(_, Backbone, AbstractModel){
     var TableRow = AbstractModel.extend({
         initialize: function() {
-            wrap.TableRow.__super__.parse.call(this);
+            TableRow.__super__.parse.call(this);
         }
     });
 

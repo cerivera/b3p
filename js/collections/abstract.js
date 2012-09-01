@@ -1,7 +1,3 @@
-/**
- * Base Collection class.
- */
-
 define([
     'backbone'
 ], function(Backbone){

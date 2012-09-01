@@ -22,6 +22,7 @@ define([
             _.bindAll(this, 'selectAll', 'showEmailModal', 'sendEmail');
         },
 
+
         selectAll : function() {
             $('input.table-row', this.el).attr('checked',
                 $('input#table-select-all').is(':checked'));
